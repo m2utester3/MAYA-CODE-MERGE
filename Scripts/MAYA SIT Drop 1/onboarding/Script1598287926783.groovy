@@ -50,7 +50,7 @@ Mobile.tap(findTestObject('MAYA SIT Regression SPY/spy reg2/UAT - onboarding - H
 
 Mobile.tap(findTestObject('MAYA SIT v118/android.view.ViewGroup0 (2)'), 0)
 
-Mobile.setText(findTestObject('MAYA SIT v118/android.widget.EditText0'), 'pol_rpp26', 0)
+Mobile.setText(findTestObject('MAYA SIT v118/android.widget.EditText0'), 'pentestu102', 0)
 
 WebUI.delay(3)
 
@@ -62,19 +62,11 @@ WebUI.delay(3)
 
 Mobile.tap(findTestObject('MAYA SIT v118/android.view.ViewGroup0 (3)'), 0)
 
-Mobile.setText(findTestObject('MAYA SIT Regression SPY/onboarding pwd SET TEXT'), 'pass1234', 0)
+Mobile.setText(findTestObject('MAYA SIT Regression SPY/onboarding pwd SET TEXT'), 'Pass@1247', 0)
 
 Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/onboarding/3.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tapAtPosition(width * 0.90740, height * 0.94895)
-
-Mobile.getText(findTestObject('MAYA SIT Regression SPY/spy reg2/UAT onboard SPY - Manage Devices'), 0)
-
-Mobile.getText(findTestObject('MAYA SIT Regression SPY/spy reg2/UAT onboard SPY - linked msg'), 0)
-
-Mobile.getText(findTestObject('MAYA SIT Regression SPY/spy reg2/UAT onboard SPY - Proceed'), 0)
-
-Mobile.tap(findTestObject('MAYA SIT Regression SPY/spy reg2/UAT onboard SPY - Proceed'), 0)
 
 for (def i = 1; i <= 6; i++) {
     Mobile.tap(findTestObject('MAYA SIT v118/android.widget.TextView0 - 5'), 0)
