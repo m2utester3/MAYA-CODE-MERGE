@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('/Users/mosaj/katalon/APK/app-uat-universal-release.apk', false)
+Mobile.startApplication('C:\\Users\\LENOVO\\Downloads\\app-sit-universal-release (3).apk', false)
 
 Mobile.tap(findTestObject('Maya/Bus Ticket/android.widget.TextView0 - More'), 0)
 

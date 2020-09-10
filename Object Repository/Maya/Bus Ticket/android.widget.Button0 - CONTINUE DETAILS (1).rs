@@ -4,12 +4,6 @@
    <name>android.widget.Button0 - CONTINUE DETAILS (1)</name>
    <tag></tag>
    <elementGuidId>a80d694f-9ce9-41a1-84a9-17e8f73f758f</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@class = 'android.widget.Button' and (text() = 'CONTINUE DETAILS' or . = 'CONTINUE DETAILS')]</value>
-      </entry>
-   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -27,7 +21,7 @@
       <value>CONTINUE DETAILS</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>

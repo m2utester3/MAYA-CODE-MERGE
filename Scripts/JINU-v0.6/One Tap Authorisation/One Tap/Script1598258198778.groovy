@@ -19,7 +19,7 @@ import io.appium.java_client.android.AndroidDriver as AndroidDriver
 import io.appium.java_client.android.AndroidKeyCode as AndroidKeyCode
 
 'Launch App'
-Mobile.startApplication('/Users/mosaj/katalon/APK/app-uat-universal-release.apk', true)
+Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-release.apk', true)
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
@@ -32,7 +32,7 @@ Mobile.tap(findTestObject('Maya/login again/android.widget.TextView0 - Next'), 0
 'Launch the App'
 Mobile.tap(findTestObject('Maya/Login/android.widget.Button0-Maybank2u'), 0)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/0.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen18.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/Login/android.widget.TextView0 - Login to Maybank2u'), 0)
 
@@ -178,7 +178,7 @@ Mobile.tap(findTestObject('Maya/Login/android.widget.TextView0 - Continue'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/1.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen12.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/Login/android.widget.TextView0 - Done setup'), 0)
 
@@ -188,7 +188,7 @@ Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 -
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/2.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen10.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - Settings (1)'), 0)
 
@@ -199,7 +199,7 @@ Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widget.TextVie
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/3.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen1.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 (1)'), 0)
 
@@ -214,7 +214,7 @@ Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 -
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/4.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen2.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - One Time Password (1)'), 0)
 
@@ -356,11 +356,11 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 driver.pressKeyCode(AndroidKeyCode.ENTER)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/5.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen3.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/8.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen3.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.clearText(findTestObject('Maya/One Tap Authorisation/android.widget.EditText0 - 1234'), 0)
 
@@ -376,7 +376,7 @@ Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widget.TextVie
 Mobile.verifyElementExist(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - ID number is required'), 
     0)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/7.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen23.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.setText(findTestObject('Maya/One Tap Authorisation/android.widget.EditText0 - Your ID number (2)'), '850102036544', 
     0)
@@ -498,7 +498,7 @@ driver.pressKeyCode(AndroidKeyCode.ENTER)
 
 Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - ID number is invalid'), 0)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/9.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen15.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - ID number is invalid'), 
     0)
@@ -510,7 +510,7 @@ Mobile.setText(findTestObject('Maya/One Tap Authorisation/android.widget.EditTex
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/10.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen9.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - Continue (1)'), 0)
 
@@ -529,7 +529,7 @@ driver.pressKeyCode(AndroidKeyCode.ENTER)
 Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - Device name must be alphanumeric characters with no symbols and spaces.'), 
     0)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/11.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen14.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - Device name must be alphanumeric characters with no symbols and spaces.'), 
     0)
@@ -554,7 +554,7 @@ Mobile.setText(findTestObject('Maya/One Tap Authorisation/android.widget.EditTex
 
 driver.pressKeyCode(AndroidKeyCode.ENTER)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/12.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen4.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - Continue (1)'), 0)
 
@@ -562,7 +562,7 @@ Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widget.TextVie
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/13.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen5.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - You may now authorise your transactions securely via the app.'), 
     0)
@@ -574,7 +574,7 @@ Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widget.TextVie
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/14.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen8.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 (2)'), 0)
 
@@ -582,7 +582,7 @@ Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.ImageView0 
 
 Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 (2)'), 0)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/15.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen17.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - Cancel'), 0)
 
@@ -593,7 +593,7 @@ Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 -
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/OneTap/16.png', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen6.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.closeApplication()
 

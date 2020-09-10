@@ -18,38 +18,38 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 import io.appium.java_client.android.AndroidDriver as AndroidDriver
 import io.appium.java_client.android.AndroidKeyCode as AndroidKeyCode
 
-Mobile.startApplication('/Users/mosaj/katalon/APK/app-uat-universal-release.apk', false)
+Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-release.apk', false)
 
-Mobile.getText(findTestObject('Banking - Investments/android.widget.TextView0 - Maybank2u'), 0)
+Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Banking - Investments/android.widget.TextView0 - Maybank2u'), 0)
-
-Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 2'), 0)
+Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.ImageView0'), 0)
 
 Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 2'), 0)
 
-Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 2'), 0)
+Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 3'), 0)
 
-Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 2'), 0)
+Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 0'), 0)
 
-Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 2'), 0)
+Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 9'), 0)
 
-Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 2'), 0)
+Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 8'), 0)
+
+Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 3'), 0)
 
 not_run: Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.ImageView0 (1)'), 0)
 
 Mobile.getText(findTestObject('Maya/drop4 CR/android.widget.TextView0 - RM 1171.85-Current balance'), 0)
 
-not_run: String trx6 = Mobile.getText(findTestObject('Maya/drop4 CR/android.widget.TextView0 - RM 1171.85-Current balance'), 
-    0).substring(3)
+String trx6 = Mobile.getText(findTestObject('Maya/drop4 CR/android.widget.TextView0 - RM 1171.85-Current balance'), 0).substring(
+    3)
 
-not_run: String trx61 = trx6.replaceAll('[^a-zA-Z0-9]+', '')
+String trx61 = trx6.replaceAll('[^a-zA-Z0-9]+', '')
 
-not_run: System.out.println(trx61)
+System.out.println(trx61)
 
-not_run: int trx611 = ((trx61) as Integer)
+int trx611 = ((trx61) as Integer)
 
-not_run: System.out.println(trx611)
+System.out.println(trx611)
 
 not_run: Mobile.tap(findTestObject('Maya/KLIA/android.widget.ImageView0 (4)'), 0)
 
@@ -57,7 +57,7 @@ Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - More'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/1.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket1.png', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - ERL Tickets'), 0)
 
@@ -65,7 +65,7 @@ Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - KLIA Ekspres
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/2.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket2.png', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - Buy Tickets'), 0)
 
@@ -73,7 +73,7 @@ Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - From'), 0)
 
 Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - From'), 0)
 
-Mobile.tap(findTestObject('Maya/KLIA/spy/KLIA spy- from Please Select'), 0)
+Mobile.tap(findTestObject('Maya/KLIA/android.widget.ImageView0'), 0)
 
 Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - Done'), 0)
 
@@ -81,11 +81,11 @@ Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - To'), 0)
 
 Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - To'), 0)
 
-Mobile.tap(findTestObject('Maya/KLIA/spy/KLIA spy- TO Please Select'), 0)
+Mobile.tap(findTestObject('Maya/KLIA/android.widget.ImageView0 (1)'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/3.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket3.png', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - Done'), 0)
 
@@ -97,16 +97,16 @@ Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - S
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/4.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket4.png', FailureHandling.STOP_ON_FAILURE)
 
 //Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - Check Train Schedule'), 0)
-not_run: Mobile.tap(findTestObject('Maya/KLIA/android.widget.ImageView0 (2)'), 0)
+Mobile.tap(findTestObject('Maya/KLIA/android.widget.ImageView0 (2)'), 0)
 
 not_run: Mobile.tap(findTestObject('Maya/KLIA/android.view.ViewGroup0'), 0)
 
 Mobile.tap(findTestObject('Maya/KLIA/android.widget.EditText0 - Enter date'), 0)
 
-not_run: Mobile.tap(findTestObject('Maya/KLIA/android.widget.ImageView0nEXT mONTH'), 0)
+Mobile.tap(findTestObject('Maya/KLIA/android.widget.ImageView0nEXT mONTH'), 0)
 
 Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - 1'), 0)
 
@@ -114,7 +114,7 @@ Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - Done (1)'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/5.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket5.png', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -156,7 +156,7 @@ Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - T
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/6.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket6.png', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - Continue (2)'), 0)
 
@@ -164,23 +164,23 @@ Mobile.setText(findTestObject('Maya/Bus Ticket/android.widget.EditText0 (10)'), 
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia7.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket7.png', FailureHandling.STOP_ON_FAILURE)
 
 AndroidDriver<?> driver = MobileDriverFactory.getDriver()
 
 driver.pressKeyCode(AndroidKeyCode.ENTER)
 
-not_run: Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - RM 60.75'), 0)
+Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - RM 60.75'), 0)
 
-not_run: String trx5 = Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - RM 60.75'), 0).substring(3)
+String trx5 = Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - RM 60.75'), 0).substring(3)
 
-not_run: String trx51 = trx5.replaceAll('[^a-zA-Z0-9]+', '')
+String trx51 = trx5.replaceAll('[^a-zA-Z0-9]+', '')
 
-not_run: System.out.println(trx51)
+System.out.println(trx51)
 
-not_run: int trx511 = ((trx51) as Integer)
+int trx511 = ((trx51) as Integer)
 
-not_run: System.out.println(trx511)
+System.out.println(trx511)
 
 not_run: Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - Summary'), 0)
 
@@ -194,7 +194,7 @@ Mobile.verifyElementVisible(findTestObject('Maya/KLIA/android.widget.TextView0 -
 
 Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - 20 Jul 2020'), 0)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - 20 Jul 2020'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - 20 Jul 2020'), 0)
 
 Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - Pay from'), 0)
 
@@ -206,7 +206,7 @@ Mobile.verifyElementVisible(findTestObject('Maya/KLIA/android.widget.TextView0 -
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/8.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket8.png', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - Date (1)'), 0)
 
@@ -326,7 +326,7 @@ Mobile.getText(findTestObject('Maya/Bus Ticket/android.widget.TextView0 - Paymen
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/9.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket10.png', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Maya/Bus Ticket/android.widget.TextView0 - Payment successful'), 0)
 
@@ -344,9 +344,9 @@ Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - D
 
 Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - Share Receipt'), 0)
 
-not_run: Mobile.tap(findTestObject('Maya/KLIA/android.widget.ImageView0 (3)'), 0)
+Mobile.tap(findTestObject('Maya/KLIA/android.widget.ImageView0 (3)'), 0)
 
-not_run: Mobile.tap(findTestObject('Maya/KLIA/android.widget.Button0 - Cancel'), 0)
+Mobile.tap(findTestObject('Maya/KLIA/android.widget.Button0 - Cancel'), 0)
 
 Mobile.getText(findTestObject('Maya/KLIA/android.view.View0 - Reference ID'), 0)
 
@@ -354,7 +354,7 @@ Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.view.View0 - Referen
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/10.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket11.png', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/Movie Ticket/android.widget.TextView0 - Share Receipt'), 0)
 
@@ -405,20 +405,20 @@ Mobile.tap(findTestObject('Maya/New_Transfer/android.widget.TextView0 - Wallet')
 
 Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - RM 981.40'), 0)
 
-not_run: String trx4 = Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - RM 981.40'), 0).substring(3)
+String trx4 = Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - RM 981.40'), 0).substring(3)
 
-not_run: String trx41 = trx4.replaceAll('[^a-zA-Z0-9]+', '')
+String trx41 = trx4.replaceAll('[^a-zA-Z0-9]+', '')
 
-not_run: System.out.println(trx41)
+System.out.println(trx41)
 
-not_run: int trx411 = ((trx41) as Integer)
+int trx411 = ((trx41) as Integer)
 
-not_run: System.out.println(trx411)
+System.out.println(trx411)
 
-not_run: int trx311 = trx611 - trx511
+int trx311 = trx611 - trx511
 
-not_run: if (trx311 == trx411) {
-    not_run: System.out.println('Balance match')
+if (trx311 == trx411) {
+    System.out.println('Balance match')
 } else {
     System.out.println('Balance not match')
 }
@@ -431,7 +431,7 @@ Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - T
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/11.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket13.png', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - Home'), 0)
 
@@ -445,7 +445,7 @@ Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - Maybank2u Pa
 
 Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - Today (1)'), 0)
 
-Mobile.takeScreenshot('/Users/mosaj/katalon/screenshots/klia/12.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket53.png', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('Maya/KLIA/android.widget.TextView0 - Successful payment of RM 182.25 to KLIA. REF180446966M'), 
     0)
