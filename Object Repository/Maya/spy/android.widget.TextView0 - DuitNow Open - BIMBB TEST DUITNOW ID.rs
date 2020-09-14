@@ -4,6 +4,12 @@
    <name>android.widget.TextView0 - DuitNow Open - BIMBB TEST DUITNOW ID</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.TextView' and (contains(text(), 'DUITNOW BIMBB TEST DUITNOW') or contains(., 'DUITNOW BIMBB TEST DUITNOW'))]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -15,10 +21,10 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>DuitNow Open - BIMBB TEST DUITNOW ID</value>
+      <value>DUITNOW BIMBB TEST DUITNOW</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

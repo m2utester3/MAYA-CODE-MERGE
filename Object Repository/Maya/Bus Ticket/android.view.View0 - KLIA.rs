@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.view.View' and (text() = 'Kuala Lumpur' or . = 'Kuala Lumpur')]</value>
+         <value>//*[@class = 'android.view.View' and (text() = 'Kota Bharu' or . = 'Kota Bharu')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -24,7 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Kuala Lumpur</value>
+      <value>Kota Bharu</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

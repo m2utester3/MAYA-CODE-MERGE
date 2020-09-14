@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.view.View' and (text() = 'Melaka (Malacca)' or . = 'Melaka (Malacca)')]</value>
+         <value>//*[@class = 'android.view.View' and (contains(text(), 'Kota Bharu') or contains(., 'Kota Bharu'))]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,10 +21,10 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Melaka (Malacca)</value>
+      <value>Kota Bharu</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

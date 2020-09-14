@@ -4,6 +4,12 @@
    <name>android.widget.TextView0 - Payment successful</name>
    <tag></tag>
    <elementGuidId>ff65af70-9dd8-414f-890d-47a14aeae650</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.TextView' and (text() = 'Payment Successful' or . = 'Payment Successful')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -18,7 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Payment successful</value>
+      <value>Payment Successful</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -4,6 +4,12 @@
    <name>android.widget.EditText0 - Redmi</name>
    <tag></tag>
    <elementGuidId>7d10f92d-dad0-4adc-91bc-6c1bd54c88bd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.EditText' and (text() = 'Samsung' or . = 'Samsung')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -15,10 +21,10 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Redmi</value>
+      <value>Samsung</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
