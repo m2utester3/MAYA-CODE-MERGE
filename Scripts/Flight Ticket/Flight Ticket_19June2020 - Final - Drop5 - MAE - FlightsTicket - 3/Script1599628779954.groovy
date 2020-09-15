@@ -60,10 +60,9 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 3\\Screenshot MAYA\\3.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Flight Ticket_19June2020/Spy-2/android.widget.TextView0 - Show Balance on Dashboard_GET TEXT'), 
-    0)
+Mobile.getText(findTestObject('Flight Ticket_19June2020/Spy-2/android.widget.TextView0 - Hide Balance on Dashboard'), 0)
 
-Mobile.verifyElementExist(findTestObject('Flight Ticket_19June2020/Spy-2/android.widget.TextView0 - Show Balance on Dashboard_GET TEXT'), 
+Mobile.verifyElementExist(findTestObject('Flight Ticket_19June2020/Spy-2/android.widget.TextView0 - Hide Balance on Dashboard'), 
     0)
 
 Mobile.getText(findTestObject('Flight Ticket_19June2020/MAE/android.widget.TextView0 - Change Wallet Account'), 0)
@@ -867,14 +866,13 @@ WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 3\\Screenshot MAYA\\33.png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Flight Ticket_19June2020/CR-36_Notifications/android.widget.TextView0 - Got It_GETTEXT'), 
+Mobile.getText(findTestObject('Flight Ticket_19June2020/CR-36_Notifications/android.widget.TextView0 - Got It_GETTEXT'), 
     0)
 
-not_run: Mobile.verifyElementExist(findTestObject('Flight Ticket_19June2020/CR-36_Notifications/android.widget.TextView0 - Got It_GETTEXT'), 
+Mobile.verifyElementExist(findTestObject('Flight Ticket_19June2020/CR-36_Notifications/android.widget.TextView0 - Got It_GETTEXT'), 
     0)
 
-not_run: Mobile.tap(findTestObject('Flight Ticket_19June2020/CR-36_Notifications/android.widget.TextView0 - Got It_GETTEXT'), 
-    0)
+Mobile.tap(findTestObject('Flight Ticket_19June2020/CR-36_Notifications/android.widget.TextView0 - Got It_GETTEXT'), 0)
 
 WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[1]/android.view.View[2]/android.view.View[2]/android.widget.CheckBox[1][count(. | //*[@class = 'android.widget.CheckBox' and (text() = 'I agree to the terms and conditions of Airpaz and AK-AirAsia Non-Refundable Policy. *' or . = 'I agree to the terms and conditions of Airpaz and AK-AirAsia Non-Refundable Policy. *')]) = count(//*[@class = 'android.widget.CheckBox' and (text() = 'I agree to the terms and conditions of Airpaz and AK-AirAsia Non-Refundable Policy. *' or . = 'I agree to the terms and conditions of Airpaz and AK-AirAsia Non-Refundable Policy. *')])]</value>
+         <value>//*[@class = 'android.widget.CheckBox' and (starts-with(text(), 'I agree') or starts-with(., 'I agree'))]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,10 +21,10 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>starts with</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>I agree to the terms and conditions of Airpaz and AK-AirAsia Non-Refundable Policy. *</value>
+      <value>I agree</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -139,7 +139,7 @@
       <value>36</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
