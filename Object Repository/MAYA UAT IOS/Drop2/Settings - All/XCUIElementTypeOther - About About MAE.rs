@@ -4,6 +4,12 @@
    <name>XCUIElementTypeOther - About About MAE</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'XCUIElementTypeOther' and contains(@label, 'About MAE') and @name = 'About MAE']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -29,17 +35,17 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>label</name>
       <type>Main</type>
-      <value>About About MAE</value>
+      <value>About MAE</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>About About MAE</value>
+      <value>About MAE</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

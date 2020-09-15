@@ -4,6 +4,12 @@
    <name>XCUIElementTypeOther - Mobile Number 4848 Maybank</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'XCUIElementTypeOther' and starts-with(@label, 'Mobile Number') and @name = 'Mobile Number']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -29,17 +35,17 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>starts with</matchCondition>
       <name>label</name>
       <type>Main</type>
-      <value>Mobile Number ********4848 Maybank</value>
+      <value>Mobile Number</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>starts with</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>Mobile Number ********4848 Maybank</value>
+      <value>Mobile Number</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
