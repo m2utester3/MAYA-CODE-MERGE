@@ -43,7 +43,7 @@ Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\4.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/android.widget.ImageButton0'), 0)
+Mobile.pressBack()
 
 Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -83,7 +83,7 @@ Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\7.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(60, 128)
+Mobile.tapAtPosition(112, 182)
 
 Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -93,35 +93,37 @@ Mobile.tap(findTestObject('F_B_Drop4/android.widget.TextView0 - Food'), 0)
 
 Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(623, 610)
+Mobile.tapAtPosition(935, 668)
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\9.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/Spy/android.widget.TextView0 - View All_PROMOTIONS-Child (1)'), 825)
+Mobile.tap(findTestObject('Nisa_Spy/FB/android.widget.TextView0 - View All_PROMOTIONS'), 825)
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\10.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(263, 262)
+Mobile.tap(findTestObject('Nisa_Spy/FB/android.widget.TextView0 - Find merchants_UNDER PROMO'), 0)
 
 Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(563, 1181)
+Mobile.tapAtPosition(854, 1529)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(292, 1173)
+Mobile.tapAtPosition(435, 1526)
 
 Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\11.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(292, 1283)
+Mobile.tapAtPosition(445, 1678)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.pressBack()
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\12.png', FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -137,17 +139,17 @@ driver.pressKeyCode(AndroidKeyCode.ENTER)
 
 Mobile.delay(7, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(368, 716)
+Mobile.tap(findTestObject('Nisa_Spy/FB/android.widget.TextView0 - Cancel_afterbummer'), 0)
 
 Mobile.delay(7, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\13.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/Spy/android.widget.TextView0 - View All_PROMOTIONS-Child (1)'), 825)
+Mobile.tap(findTestObject('Nisa_Spy/FB/android.widget.TextView0 - View All_PROMOTIONS'), 825)
 
 Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(640, 240)
+Mobile.tapAtPosition(942, 386)
 
 Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -177,6 +179,10 @@ Mobile.getText(findTestObject('F_B_Drop4/verification/android.widget.TextView0 -
 Mobile.verifyElementExist(findTestObject('F_B_Drop4/verification/android.widget.TextView0 - Categories_getText_PROMOTIONS_4'), 
     0)
 
+Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.swipe(888, 1531, 594, 497)
+
 Mobile.getText(findTestObject('F_B_Drop4/verification/android.widget.TextView0 - Display Newest Additions_getText_PROMOTIONS_5'), 
     0)
 
@@ -190,13 +196,13 @@ Mobile.verifyElementExist(findTestObject('F_B_Drop4/verification/android.widget.
 
 Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/android.widget.ImageView0 (3)'), 0)
+Mobile.tapAtPosition(964, 207)
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\16.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/android.widget.ImageView0 (4)'), 0)
+Mobile.tapAtPosition(120, 185)
 
 Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -208,7 +214,7 @@ Mobile.verifyElementExist(findTestObject('F_B_Drop4/android.widget.TextView0 - B
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(624, 875)
+Mobile.tapAtPosition(910, 1403)
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -220,17 +226,13 @@ Mobile.verifyElementExist(findTestObject('F_B_Drop4/android.widget.TextView0 - M
 
 Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/Spy/android.widget.ImageView0-buttonFilter-MERCHANTS'), 825)
+Mobile.tapAtPosition(935, 404)
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\19.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/Spy/android.widget.ImageView0-TAP-PleaseSelectDistance-MERCHANT'), 825)
-
 Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\20.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('F_B_Drop4/verification/android.widget.TextView0 - Filter_getText_MERCHANTS_1'), 0)
 
@@ -256,6 +258,8 @@ Mobile.getText(findTestObject('F_B_Drop4/verification/android.widget.TextView0 -
 Mobile.verifyElementExist(findTestObject('F_B_Drop4/verification/android.widget.TextView0 - Categories_getText_MERCHANTS_4'), 
     0)
 
+Mobile.swipe(858, 1537, 676, 745)
+
 Mobile.getText(findTestObject('F_B_Drop4/verification/android.widget.TextView0 - Display Newest Additions_getText_MERCHANTS_5'), 
     0)
 
@@ -269,26 +273,21 @@ Mobile.verifyElementExist(findTestObject('F_B_Drop4/verification/android.widget.
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/Spy/android.widget.ImageView0_Xbutton_Filter_MERCHANT'), 825)
+Mobile.tapAtPosition(964, 198)
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\21.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/Spy/android.widget.ImageView0_ArrowButton_Filter_Merchants'), 825)
+Mobile.tapAtPosition(103, 189)
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\22.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('F_B_Drop4/verification/android.widget.TextView0 - DISCOVER-GETTEXT-1-FOOD'), 0)
+Mobile.getText(findTestObject('Nisa_Spy/FB/android.widget.TextView0 - DISCOVER'), 0)
 
-Mobile.verifyElementExist(findTestObject('F_B_Drop4/verification/android.widget.TextView0 - DISCOVER-GETTEXT-1-FOOD'), 0)
-
-Mobile.getText(findTestObject('F_B_Drop4/verification/android.widget.TextView0 - MAKAN MANA-GETTEXT-2-FOOD'), 0)
-
-Mobile.verifyElementExist(findTestObject('F_B_Drop4/verification/android.widget.TextView0 - MAKAN MANA-GETTEXT-2-FOOD'), 
-    0)
+Mobile.getText(findTestObject('Nisa_Spy/FB/android.widget.TextView0 - MAKAN MANA'), 0)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\23.png', FailureHandling.CONTINUE_ON_FAILURE)
 

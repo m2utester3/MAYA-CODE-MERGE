@@ -202,6 +202,8 @@ Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\W20.png', FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.swipe(734, 1153, 475, 255)
+
 Mobile.getText(findTestObject('F_B_Drop4/FB_Location_Wheel/android.widget.TextView0 - Call Now_GetText_10'), 0)
 
 Mobile.verifyElementExist(findTestObject('F_B_Drop4/FB_Location_Wheel/android.widget.TextView0 - Call Now_GetText_10'), 
@@ -223,27 +225,21 @@ Mobile.verifyElementExist(findTestObject('F_B_Drop4/FB_Location_Wheel/android.wi
 
 Mobile.verifyElementExist(findTestObject('F_B_Drop4/FB_Location_Wheel/android.widget.TextView0 - View All-VEX-2'), 0)
 
-Mobile.verifyElementExist(findTestObject('F_B_Drop4/FB_Location_Wheel/android.view.ViewGroup0_VEX-3'), 0)
-
 Mobile.tap(findTestObject('F_B_Drop4/FB_Location_Wheel/android.widget.TextView0 - View All-VEX-2'), 0)
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\W21.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/FB_Location_Wheel/android.widget.ImageView0_BACKBUTTON-afterSwipe2'), 0)
+Mobile.tap(findTestObject('Nisa_Spy/FB/android.widget.ImageView0_BackButton_MoreLikeThis'), 0)
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\W22.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('F_B_Drop4/FB_Location_Wheel/android.widget.ImageView0 (1)'), 0)
-
 Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.takeScreenshot('C:\\Users\\Hewlett Packard\\Documents\\MAYBANK\\AUTOMATION TESTING\\DROP 4\\FB\\W23.png', FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.tap(findTestObject('F_B_Drop4/FB_Location_Wheel/android.widget.ImageView0_BACK_WHEEL_LAST'), 0)
+Mobile.tap(findTestObject('Nisa_Spy/FB/android.widget.ImageView0_BackButton_Food'), 0)
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
