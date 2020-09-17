@@ -22,6 +22,10 @@ Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-re
 
 Mobile.delay(10, FailureHandling.CONTINUE_ON_FAILURE)
 
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
+
 Mobile.tap(findTestObject('Maya/New_Transfer/android.widget.TextView0 - Transfer (1)'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
@@ -164,9 +168,9 @@ Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.swipe(592, 1887, 607, 1700, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
-
 Mobile.tap(findTestObject('Maya/NRIC Passport/Pssport-Done'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - ID type (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -176,7 +180,9 @@ Mobile.getText(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - P
 
 Mobile.verifyElementExist(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Passport Number (5)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(983, 1829, FailureHandling.CONTINUE_ON_FAILURE)
+driver.pressKeyCode(AndroidKeyCode.ENTER)
+
+not_run: Mobile.tapAtPosition(983, 1829, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.getText(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Passport Number (6)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -194,31 +200,31 @@ not_run: Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.ImageVie
 
 Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.swipe(556, 1886, 751, 1470, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.swipe(556, 1886, 751, 1470, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.swipe(556, 1886, 751, 1470, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.swipe(556, 1886, 751, 1470, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.swipe(556, 1886, 751, 1470, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.swipe(556, 1886, 751, 1470, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.swipe(556, 1886, 751, 1470, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.swipe(556, 1886, 751, 1470, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.swipe(556, 1886, 751, 1644, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.swipe(556, 1886, 751, 1644, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.swipe(556, 1886, 751, 1644, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.swipe(556, 1886, 751, 1644, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.swipe(556, 1886, 751, 1644, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -264,7 +270,9 @@ Mobile.tap(findTestObject('Maya/duitnow/android.widget.TextView0 - 0 (1)'), 0, F
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\Third Party Fav\\PassAmount.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.80185, height * 0.92196)
+
+not_run: Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.ImageView0 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -371,7 +379,9 @@ if (Mobile.verifyElementExist(findTestObject('Maya/spy/android.widget.TextView0 
     
     Mobile.delay(8, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tapAtPosition(826, 2048)
+    Mobile.tapAtPosition(width * 0.80185, height * 0.92196)
+
+    not_run: Mobile.tapAtPosition(826, 2048)
 }
 
 if (Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - Approve'), 0)) {
@@ -433,7 +443,7 @@ Mobile.getText(findTestObject('Maya/NRIC Passport/android.view.View0 - DuitNow')
 
 Mobile.getText(findTestObject('Maya/NRIC Passport/android.view.View0 - Successful'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/NRIC Passport/android.view.View0 - Beneficiary name'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/NRIC Passport/android.view.View0 - Beneficiary name'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/NRIC Passport/android.view.View0 - DEADPOOL'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 

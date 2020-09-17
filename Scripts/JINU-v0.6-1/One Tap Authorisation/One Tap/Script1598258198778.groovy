@@ -23,6 +23,10 @@ Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-re
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
+
 Mobile.tap(findTestObject('Maya/login again/android.widget.TextView0 - Next'), 10)
 
 Mobile.tap(findTestObject('Maya/login again/android.widget.TextView0 - Next'), 0)
@@ -64,7 +68,11 @@ Mobile.tap(findTestObject('Maya/login again/android.widget.TextView0 - 8'), 0)
 
 Mobile.tap(findTestObject('Maya/login again/android.widget.TextView0 - 3'), 0)
 
-Mobile.tapAtPosition(820, 1778)
+WebUI.delay(2)
+
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
+not_run: Mobile.tapAtPosition(820, 1778)
 
 not_run: Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.ImageView0 (8)'), 0)
 
@@ -84,7 +92,11 @@ Mobile.tap(findTestObject('Maya/login again/android.widget.TextView0 - 8'), 0)
 
 Mobile.tap(findTestObject('Maya/login again/android.widget.TextView0 - 3'), 0)
 
-Mobile.tapAtPosition(820, 1778)
+WebUI.delay(2)
+
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
+not_run: Mobile.tapAtPosition(820, 1778)
 
 not_run: Mobile.tap(findTestObject('Maya/Login/android.widget.ImageView0-Enter OTP'), 0)
 
@@ -165,7 +177,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0)
 
@@ -177,7 +189,9 @@ driver.pressKeyCode(AndroidKeyCode.ENTER)
 
 Mobile.tap(findTestObject('Maya/Login/android.widget.TextView0 - Continue'), 0)
 
-Mobile.tapAtPosition(545, 1408)
+Mobile.tapAtPosition(width * 0.50462, height * 0.78483)
+
+not_run: Mobile.tapAtPosition(545, 1408)
 
 Mobile.tap(findTestObject('Maya/Login/android.widget.TextView0 - Continue'), 0)
 
@@ -212,7 +226,9 @@ not_run: Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.Im
 
 not_run: Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 (1)'), 0)
 
-Mobile.tapAtPosition(484, 1145)
+Mobile.tapAtPosition(width * 0.44814, height * 0.63823)
+
+not_run: Mobile.tapAtPosition(484, 1145)
 
 Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - Approve transactions safely and quickly with a single tap on the app. Skip SMS TAC and get things done faster.'), 
     0)
@@ -336,7 +352,10 @@ for (def i = 16; i <= 21; i++) {
 }
 
 Mobile.delay(8, FailureHandling.STOP_ON_FAILURE)
-Mobile.tapAtPosition(820, 1778)
+
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
+not_run: Mobile.tapAtPosition(820, 1778)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0)
 
@@ -377,7 +396,6 @@ Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen3.png', Fail
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-
 driver.pressKeyCode(AndroidKeyCode.ENTER)
 
 Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - Continue (1)'), 0)
@@ -409,11 +427,16 @@ not_run: Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widge
 not_run: Mobile.getText(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - Enter your device name'), 
     0)
 
-Mobile.tapAtPosition(977.7, 181.8)
+Mobile.tapAtPosition(width * 0.90527, height * 0.10133)
+
+not_run: Mobile.tapAtPosition(977.7, 181.8)
+
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tapAtPosition(484, 1145)
+Mobile.tapAtPosition(width * 0.44814, height * 0.63823)
+
+not_run: Mobile.tapAtPosition(484, 1145)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
@@ -503,7 +526,9 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
+not_run: Mobile.tapAtPosition(820, 1778)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0)
 
@@ -595,7 +620,9 @@ Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen8.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAndHoldAtPosition(960.7, 1162, 1)
+Mobile.tapAtPosition(width * 0.88953, height * 0.64777)
+
+not_run: Mobile.tapAndHoldAtPosition(960.7, 1162, 1)
 
 not_run: Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 (2)'), 0)
 
@@ -607,7 +634,9 @@ Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen17.png', Fai
 
 Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 - Cancel'), 0)
 
-Mobile.tapAndHoldAtPosition(960.7, 1162, 1)
+Mobile.tapAtPosition(width * 0.88953, height * 0.64777)
+
+not_run: Mobile.tapAndHoldAtPosition(960.7, 1162, 1)
 
 not_run: Mobile.tap(findTestObject('Maya/One Tap Authorisation/android.widget.TextView0 (2)'), 0)
 

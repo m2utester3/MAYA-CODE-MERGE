@@ -20,7 +20,11 @@ import io.appium.java_client.android.AndroidKeyCode as AndroidKeyCode
 
 Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-release.apk', false)
 
-Mobile.tap(findTestObject('Maya/update Profile/android.widget.TextView0 - More'), 0)
+Mobile.tap(findTestObject('Maya/update Profile/android.widget.TextView0 - More'), 10)
+
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
 
 Mobile.tap(findTestObject('Maya/update Profile/android.widget.TextView0 - Settings'), 0)
 

@@ -182,6 +182,10 @@ Mobile.tap(findTestObject('Maya/Login/android.widget.TextView0 - Done setup'), 0
 */
 Mobile.delay(10, FailureHandling.CONTINUE_ON_FAILURE)
 
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
+
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen3.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementText(findTestObject('Maya/Third Party Fav/android.widget.TextView0 - Test'), 'Test', FailureHandling.CONTINUE_ON_FAILURE)
@@ -236,6 +240,8 @@ Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - R
 Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Receiving Account'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Switch account (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.tapAtPosition(986, 1237, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -332,7 +338,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -427,7 +433,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -528,7 +534,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -551,7 +557,7 @@ Mobile.tap(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Confi
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen6.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Confirm (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Confirm (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 def otpMess = Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - Your OTP no. is 850051'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -625,7 +631,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -665,9 +671,10 @@ Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - 4
 Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Please confirm your DuitNow details'), 0, 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Personal Current Account (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Personal Current Account (1)'), 
+    0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - 5140 1122 2552'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - 5140 1122 2552'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Terms  Conditions'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -680,19 +687,20 @@ Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - A
 
 Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - 4178 (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Personal Current Account (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Personal Current Account (2)'), 
+    0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Your Account'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Done (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - DuitNow (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.tap(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - DuitNow (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - ID Number'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.tap(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - ID Number'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(107, 202, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.tapAtPosition(107, 202, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(107, 202, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.tapAtPosition(107, 202, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.tap(findTestObject('Maya/Nric Proxy Army/android.widget.ImageView0 (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -734,6 +742,8 @@ Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - M
 Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Duitnow Proxy (NRIC Number) ending 4178 has just been disabled. (1)'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.swipe(831, 1382, 800, 800)
+
 not_run: Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - 310 PM (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Maybank2u DuitNow ID Proxy Update'), 0, FailureHandling.CONTINUE_ON_FAILURE)
@@ -741,7 +751,7 @@ Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - M
 Mobile.getText(findTestObject('Maya/Nric Proxy Army/android.widget.TextView0 - Duitnow Proxy (NRIC Number) ending 4178 has just been updated.'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 612 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 612 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.closeApplication(FailureHandling.CONTINUE_ON_FAILURE)
 

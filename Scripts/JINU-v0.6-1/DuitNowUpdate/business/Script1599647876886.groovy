@@ -22,6 +22,10 @@ Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-re
 
 Mobile.delay(10, FailureHandling.CONTINUE_ON_FAILURE)
 
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
+
 Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Maybank2u (1)'), 7, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
@@ -139,12 +143,14 @@ Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Continue (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
+
 Mobile.getText(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - The DuitNow ID entered is inactive.'), 0, 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen7.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - The DuitNow ID entered is inactive.'), 
+not_run: Mobile.verifyElementExist(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - The DuitNow ID entered is inactive.'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.clearText(findTestObject('Maya/RegisterDuitNow/android.widget.EditText0 - 803168W'), 0, FailureHandling.CONTINUE_ON_FAILURE)
@@ -181,7 +187,9 @@ Mobile.verifyElementExist(findTestObject('Maya/RegisterDuitNow/android.widget.Te
 
 Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.80185, height * 0.92196)
+
+not_run: Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.ImageView0 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -197,7 +205,9 @@ Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - 0 (1)
 
 Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - 0 (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.80185, height * 0.92196)
+
+not_run: Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.ImageView0 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -287,26 +297,30 @@ Mobile.getText(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - B
 Mobile.verifyElementExist(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Business RegistrationNumber'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
 
-String trx5 = Mobile.getText(findTestObject('Maya/drop4 CR/android.widget.TextView0 - RM 2.00-transfer amt'), 0).substring(
+not_run: String trx5 = Mobile.getText(findTestObject('Maya/drop4 CR/android.widget.TextView0 - RM 2.00-transfer amt'), 0).substring(
     3)
 
-String trx51 = trx5.replaceAll('[^a-zA-Z0-9]+', '')
+not_run: String trx51 = trx5.replaceAll('[^a-zA-Z0-9]+', '')
 
-System.out.println(trx51)
+not_run: System.out.println(trx51)
 
-int trx511 = ((trx51) as Integer)
+not_run: int trx511 = ((trx51) as Integer)
 
-System.out.println(trx511)
+not_run: System.out.println(trx511)
 
-Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - RM 2.00'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(550, 964, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Enter amount'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Enter amount'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.80185, height * 0.92196)
+
+not_run: Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.ImageView0 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.swipe(831, 979, 800, 584, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Recipient reference'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -425,7 +439,11 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(826, 2048, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.80185, height * 0.92196)
+
+not_run: Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
+not_run: Mobile.tapAtPosition(826, 2048, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Transfer scheduled'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -509,25 +527,25 @@ Mobile.getText(findTestObject('Maya/spy1/android.view.View0 - 17180841120M'), 0,
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\Third Party\\Screenshot24', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.view.View0 - 17180008563M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.view.View0 - 17180008563M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/New_Transfer/android.view.View0 - Beneficiary name'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.view.View0 - Beneficiary name'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/New_Transfer/android.view.View0 - Amount'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/New_Transfer/android.view.View0 - Test'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.view.View0 - Amount'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/NRICduitnow/android.view.View0 - Beneficiary name'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.swipe(831, 1382, 800, 100, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/New_Transfer/android.view.View0 - Recipient reference'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/New_Transfer/android.view.View0 - Test'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.getText(findTestObject('Maya/NRICduitnow/android.view.View0 - Beneficiary name'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
 Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.view.View0 - Recipient reference'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.swipe(831, 1382, 800, 100, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.getText(findTestObject('Maya/New_Transfer/android.view.View0 - Amount'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.view.View0 - Amount'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.view.View0 - RM 2.00'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -582,7 +600,7 @@ Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.widget.TextV
     2)
 
 Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.widget.TextView0 - SANDY LAM HUI MING Successfully added to Favourites - Copy'), 
-    0, FailureHandling.CONTINUE_ON_FAILURE)
+    2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen16.png', FailureHandling.CONTINUE_ON_FAILURE)
 

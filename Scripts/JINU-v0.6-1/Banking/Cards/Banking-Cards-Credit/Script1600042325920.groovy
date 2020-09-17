@@ -18,9 +18,11 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 import io.appium.java_client.android.AndroidDriver as AndroidDriver
 import io.appium.java_client.android.AndroidKeyCode as AndroidKeyCode
 
-Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-release.apk', false)
+Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-release.apk', false, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(10, FailureHandling.CONTINUE_ON_FAILURE)
+
+AndroidDriver<?> driver = MobileDriverFactory.getDriver()
 
 /*Mobile.tap(findTestObject('Maya/login again/android.widget.TextView0 - Next'), 5)
 
@@ -181,7 +183,11 @@ Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\OneTap\\Screen12.png', Fai
 
 Mobile.tap(findTestObject('Maya/Login/android.widget.TextView0 - Done setup'), 0)
 */
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank2u (1)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank2u (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+def height = Mobile.getDeviceHeight(FailureHandling.CONTINUE_ON_FAILURE)
+
+def width = Mobile.getDeviceWidth(FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 2'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -195,403 +201,432 @@ Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 8'), 0, F
 
 Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 3'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - CARDS (1)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - CARDS (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen8.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstanding Balance (2)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstanding Balance (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstanding Balance (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstanding Balance (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen10.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - RM 1765.05'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - RM 1765.05'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/spy1/cc/android.widget.TextView0 - RM 1493.41'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/spy1/cc/android.widget.TextView0 - RM 1493.41'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (4)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (4)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (2)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/spy1/wetix/android.widget.TextView0 - RM 1493.41-next'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/spy1/wetix/android.widget.TextView0 - RM 1493.41-next'), 0)
+Mobile.getText(findTestObject('Maya/spy1/wetix/android.widget.TextView0 - RM 1493.41-next'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (8)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/spy1/wetix/android.widget.TextView0 - RM 1493.41-next'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - View Transactions (2)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (8)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - View Transactions (2)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - View Transactions (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - View Transactions (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - View Transactions (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - View Transactions (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen11.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (9)'), 0)
+Mobile.tapAndHoldAtPosition(959, 184, 1)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Total Credit Limit (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Total Credit Limit (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Total Credit Limit (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Total Credit Limit (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstanding Balance (3)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstanding Balance (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstanding Balance (3)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstanding Balance (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statement Balance (1)'), 0)
+Mobile.swipe(540, 1540, 540, 400, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statement Balance (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statement Balance (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statement Date (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statement Balance (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statement Date (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statement Date (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment Due Date (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statement Date (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment Due Date (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment Due Date (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.swipe(540, 1540, 540, 400)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment Due Date (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Minimum Payment Amount (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Minimum Payment Amount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen13.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Minimum Payment Amount (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Minimum Payment Amount (1)'), 0, 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Last Payment Amount (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Last Payment Amount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Last Payment Amount (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Last Payment Amount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Last Payment Date (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Last Payment Date (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Last Payment Date (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Last Payment Date (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay Cards (1)'), 0)
+Mobile.swipe(620, 1203, 588, 1644, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - How much would you like to pay (1)'), 0)
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay Cards (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.setText(findTestObject('Maya/login again/android.widget.EditText0 (1)'), 'pass1234', 0)
+
+driver.pressKeyCode(AndroidKeyCode.ENTER)
+
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - How much would you like to pay (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - How much would you like to pay (1)'), 
-    0)
+    0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstandingamount (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstandingamount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen14.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstandingamount (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Outstandingamount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Minimumamount (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Minimumamount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Minimumamount (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Minimumamount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statementamount (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statementamount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statementamount (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Statementamount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Anyamount (1)'), 0)
+Mobile.swipe(540, 1540, 540, 400, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Anyamount (1)'), 0)
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - RM 1765.05 (2)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Anyamount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - RM 1765.05 (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Anyamount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - RM 0.00 (2)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - RM 1765.05 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - RM 1765.05 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (10)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - RM 0.00 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Please input valid amount. (1)'), 0)
+Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904, FailureHandling.CONTINUE_ON_FAILURE)
+
+not_run: Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
+
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (10)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Please input valid amount. (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen15.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Please input valid amount. (1)'), 
-    0)
+    0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Enter amount (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Enter amount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Enter amount (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Enter amount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (5)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (5)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (5)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (5)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (3)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (3)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 2 (2)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 2 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (2)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (2)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (2)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen16.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Confirmation (2)'), 0)
+not_run: Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Confirmation (2)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Confirmation (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (6)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Confirmation (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (6)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (6)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (4)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (6)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (4)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date (2)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Today (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Done (2)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Today (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Done (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen19.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay from (3)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay from (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay from (3)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay from (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Note (1)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Note (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Note (1)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Note (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.swipe(415, 1598, 50, 1300)
+Mobile.swipe(415, 1598, 50, 1300, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(400, 1572)
+Mobile.tapAtPosition(400, 1572, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay Now (2)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay Now (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(10, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment successful (2)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment successful (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment successful (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment successful (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen21.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Reference ID (2)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Reference ID (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Reference ID (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Reference ID (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date  Time (2)'), 0)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date  Time (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date  Time (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date  Time (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/spy1/android.widget.TextView0 - 17180841120M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.getText(findTestObject('Maya/spy1/cc/android.widget.TextView0 - 180856929M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/spy1/android.widget.TextView0 - 17180841120M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Maya/spy1/cc/android.widget.TextView0 - 180856929M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/spy1/android.widget.TextView0 - 11 Sep 2020 1108 AM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.getText(findTestObject('Maya/spy1/cc/android.widget.TextView0 - 17 Sep 2020 206 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/spy1/android.widget.TextView0 - 11 Sep 2020 1108 AM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Maya/spy1/cc/android.widget.TextView0 - 17 Sep 2020 206 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 180093572M'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 180093572M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 180093572M'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 180093572M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 20 Jul 2020 405 PM'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 20 Jul 2020 405 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 20 Jul 2020 405 PM'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 20 Jul 2020 405 PM'), 0, 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Share Receipt (2)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Share Receipt (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Share Receipt (3)'), 0)
+Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Share Receipt (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen22.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Share Receipt (3)'), 0)
+Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Share Receipt (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 -    2938'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 -    2938'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - 14 Sep 2020 1151 AM'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - 14 Sep 2020 1151 AM'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - Card Payment'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - Card Payment'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - From account'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - From account'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - Maybank Visa Card'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - Maybank Visa Card'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - Reference ID'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - Reference ID'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - 17180845638M'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - 17180845638M'), FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.swipe(831, 1382, 800, 100, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - RM 2.00'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - RM 2.00'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - Successful'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - Successful'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - To account'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - To account'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - To account type'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.view.View0 - To account type'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.widget.TextView0 - Malayan Banking Berhad (Co. Reg.  196001000142)'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.widget.TextView0 - Malayan Banking Berhad (Co. Reg.  196001000142)'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.widget.TextView0 - Maybank Islamic Berhad (Co. Reg.  200701029411)'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.widget.TextView0 - Maybank Islamic Berhad (Co. Reg.  200701029411)'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.getText(findTestObject('Maya/spy1/cc/android.widget.TextView0 - Note This receipt is computer generated and no signature is required.'))
+WebUI.getText(findTestObject('Maya/spy1/cc/android.widget.TextView0 - Note This receipt is computer generated and no signature is required.'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tapAtPosition(107, 202, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (11)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (11)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.Button0 - Cancel (1)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.Button0 - Cancel (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (12)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (12)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Done (3)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Done (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - View Transactions (3)'), 0)
+Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - View Transactions (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen22.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (9)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (9)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay Cards (1)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay Cards (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - RM 0.00 (2)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - RM 0.00 (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (10)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (10)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Please input valid amount. (1)'), 
-    0)
+    0, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen15.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Please input valid amount. (1)'), 
-    0)
+    0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Enter amount (1)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Enter amount (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Enter amount (1)'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Enter amount (1)'), 0, 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (5)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (5)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (5)'), 
-    0)
+    0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (3)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (3)'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 1'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 1'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 7'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 7'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (3)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (3)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (3)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (3)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 0 (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (14)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (14)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (10)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.ImageView0 (10)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Confirmation (2)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Confirmation (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Confirmation (2)'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Confirmation (2)'), 0, 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (6)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (6)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Maybank Visa Card (6)'), 
-    0)
+    0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (4)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (4)'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 -    2938 (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date (2)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date (2)'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Today (1)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Today (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Done (2)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Done (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen29.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay from (3)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay from (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay from (3)'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay from (3)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Note (1)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Note (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Note (1)'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Note (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.swipe(415, 1598, 50, 1300)
-
-not_run: Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
-
-not_run: Mobile.swipe(415, 1598, 50, 1300)
+not_run: Mobile.swipe(415, 1598, 50, 1300, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.swipe(415, 1598, 50, 1300, FailureHandling.CONTINUE_ON_FAILURE)
+
+not_run: Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen30.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tapAtPosition(400, 1572)
+not_run: Mobile.tapAtPosition(400, 1572, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay Now (2)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Pay Now (2)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.delay(10, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment failed'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment failed'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment failed'), 0)
-
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Account not authorised  Amount exceeded outstanding balance'), 
-    0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Payment failed'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Account not authorised  Amount exceeded outstanding balance'), 
-    0)
+    0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Account not authorised  Amount exceeded outstanding balance'), 
+    0, FailureHandling.CONTINUE_ON_FAILURE)
+
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen31.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Reference ID (4)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Reference ID (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Reference ID (4)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Reference ID (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date  Time (4)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Date  Time (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.getText(findTestObject('Maya/spy1/android.widget.TextView0 - 17180841120M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -601,21 +636,22 @@ not_run: Mobile.getText(findTestObject('Maya/spy1/android.widget.TextView0 - 11 
 
 not_run: Mobile.verifyElementExist(findTestObject('Maya/spy1/android.widget.TextView0 - 11 Sep 2020 1108 AM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 180190256M'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 180190256M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 180190256M'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 180190256M'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 22 Jul 2020 846 PM'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 22 Jul 2020 846 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 22 Jul 2020 846 PM'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Banking Cards/android.widget.TextView0 - 22 Jul 2020 846 PM'), 0, 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Done (4)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Banking Cards/android.widget.TextView0 - Done (4)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.tapAtPosition(107, 202, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen32.png', FailureHandling.CONTINUE_ON_FAILURE)
 

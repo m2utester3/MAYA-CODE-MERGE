@@ -114,9 +114,9 @@ Mobile.tapAtPosition(619, 1255.8)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(937.9,406.3)
+Mobile.tapAtPosition(937.9, 406.3)
 
- Mobile.tap(findTestObject('Maya/Promotions/android.widget.TextView0 - Clear (1)'), 0)
+Mobile.tap(findTestObject('Maya/Promotions/android.widget.TextView0 - Clear (1)'), 0)
 
 not_run: Mobile.tap(findTestObject('Maya/Promotions/android.widget.ImageView0 (9)'), 0)
 
@@ -130,11 +130,15 @@ not_run: Mobile.tap(findTestObject('Maya/Promotions/android.widget.ImageView0 (2
 
 Mobile.tapAndHoldAtPosition(468.5, 1288.5, 1)
 
+Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.swipe(833, 1354, 100, 700)
+
 Mobile.tap(findTestObject('Maya/Promotions/android.widget.TextView0 - View More'), 0)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAndHoldAtPosition(72.5,193.1, 1)
+Mobile.tapAndHoldAtPosition(72.5, 193.1, 1)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -157,7 +161,10 @@ Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.tap(findTestObject('Maya/Promotions/android.widget.Button0 - Cancel (1)'), 0)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+
 Mobile.tapAndHoldAtPosition(991.4, 243.8, 1)
+
+Mobile.tapAndHoldAtPosition(983, 161, 1)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -175,18 +182,15 @@ Mobile.swipe(833, 1354, 100, 700)
 
 Mobile.swipe(833, 1354, 100, 700)
 
-Mobile.swipe(833, 1354, 100, 700)
-
 Mobile.getText(findTestObject('Maya/Promotions/android.widget.TextView0 - Deals For You'), 0)
 
-Mobile.getText(findTestObject('Maya/Promotions/android.widget.TextView0 - View All'), 0)
+Mobile.swipe(833, 1354, 100, 900)
 
+Mobile.getText(findTestObject('Maya/Promotions/android.widget.TextView0 - View All'), 0)
 
 Mobile.getText(findTestObject('Maya/Promotions/android.widget.TextView0 - Latest (2)'), 0)
 
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.swipe(833, 1354, 100, 700)
 
 not_run: Mobile.tap(findTestObject('Maya/Promotions/android.widget.ImageView0 (21)'), 0)
 

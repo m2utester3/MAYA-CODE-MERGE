@@ -20,7 +20,11 @@ import io.appium.java_client.android.AndroidKeyCode as AndroidKeyCode
 
 Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-release.apk', true, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(40, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.delay(10, FailureHandling.CONTINUE_ON_FAILURE)
+
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
 
 /*Mobile.tap(findTestObject('Maya/login again/android.widget.TextView0 - Next'), 0)
 
@@ -338,7 +342,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -473,7 +477,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -578,7 +582,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -703,7 +707,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 

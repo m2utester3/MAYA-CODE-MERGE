@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.TextView' and (contains(text(), 'Record exists') or contains(., 'Record exists'))]</value>
+         <value>//*[@class = 'android.widget.TextView' and (contains(text(), 'exists') or contains(., 'exists'))]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -24,7 +24,7 @@
       <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Record exists</value>
+      <value>exists</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

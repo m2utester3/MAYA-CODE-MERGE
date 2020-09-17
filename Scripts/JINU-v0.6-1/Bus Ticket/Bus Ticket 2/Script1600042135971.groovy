@@ -22,6 +22,10 @@ Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-re
 
 Mobile.tap(findTestObject('Maya/spy1/wetix/android.widget.TextView0 - Maybank2u'), 0)
 
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
+
 Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 2'), 0)
 
 Mobile.tap(findTestObject('Maya/DuitnowRegT/android.widget.TextView0 - 3'), 0)
@@ -129,17 +133,17 @@ Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\BusTicket\\Ticket15.png', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/Bus Ticket/android.view.View0 - Pick-Up Point (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/Bus Ticket/android.view.View0 - Pick-Up Point (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/Bus Ticket/android.view.View0 - Pick-Up Point (1)'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Bus Ticket/android.view.View0 - Pick-Up Point (1)'), 0)
 
-Mobile.getText(findTestObject('Maya/Bus Ticket/android.view.View0 - Drop-Off Point (1)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Bus Ticket/android.view.View0 - Drop-Off Point (1)'), 0)
 
-Mobile.verifyElementExist(findTestObject('Maya/Bus Ticket/android.view.View0 - Drop-Off Point (1)'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Bus Ticket/android.view.View0 - Drop-Off Point (1)'), 0)
 
-Mobile.swipe(895, 1046, 800, 50)
+not_run: Mobile.swipe(895, 1046, 800, 50)
 
-Mobile.getText(findTestObject('Maya/Bus Ticket/android.view.View0 - 0 SEAT(S)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Bus Ticket/android.view.View0 - 0 SEAT(S)'), 0)
 
 not_run: if (Mobile.verifyElementExist(findTestObject('Maya/Bus Ticket/android.view.View0 - 0 SEAT(S)'), 0)) {
     not_run: Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
@@ -171,15 +175,15 @@ not_run: if (Mobile.verifyElementExist(findTestObject('Maya/Bus Ticket/android.v
 }
 
 //Mobile.tap(findTestObject('Maya/Movie Ticket/android.view.View0 (3)'), 0)
-Mobile.getText(findTestObject('Maya/Bus Ticket/android.view.View0 - 1 SEAT(S)'), 0)
+not_run: Mobile.getText(findTestObject('Maya/Bus Ticket/android.view.View0 - 1 SEAT(S)'), 0)
 
-Mobile.verifyElementExist(findTestObject('Maya/Bus Ticket/android.view.View0 - 1 SEAT(S)'), 0)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/Bus Ticket/android.view.View0 - 1 SEAT(S)'), 0)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\BusTicket\\Ticket3.png', FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\BusTicket\\Ticket3.png', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Maya/Bus Ticket/android.widget.Button0 - CONTINUE DETAILS (1)'), 0)
+not_run: Mobile.tap(findTestObject('Maya/Bus Ticket/android.widget.Button0 - CONTINUE DETAILS (1)'), 0)
 
 Mobile.getText(findTestObject('Maya/Bus Ticket/android.view.View0 - Contact Details'), 0)
 
@@ -191,7 +195,7 @@ Mobile.setText(findTestObject('Maya/spy1/bus/android.widget.EditText0-Name'), 'T
 
 Mobile.setText(findTestObject('Maya/spy1/bus/android.widget.EditText0-Email'), 'th23@gmail.com', 0)
 
-Mobile.swipe(804.7, 915.5, 869, 600)
+not_run: Mobile.swipe(804.7, 915.5, 869, 600)
 
 Mobile.setText(findTestObject('Maya/spy1/bus/android.widget.EditText0-Phone'), '1156754567', 0)
 
@@ -305,7 +309,7 @@ if (Mobile.verifyElementExist(findTestObject('Maya/spy/android.widget.TextView0 
     
     Mobile.delay(8, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tapAtPosition(826, 2048)
+    Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 }
 
 if (Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0 - Approve'), 0)) {
@@ -313,17 +317,17 @@ if (Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0
 
     Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\KLIATicket\\Ticket9.png', FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - To (2)'), 0)
+    not_run: Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - To (2)'), 0)
 
-    Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - KLIA Ekspres (2)'), 0)
+    not_run: Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - KLIA Ekspres (2)'), 0)
 
-    Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - From (2)'), 0)
+    not_run: Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - From (2)'), 0)
 
-    Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - Date (2)'), 0)
+    not_run: Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - Date (2)'), 0)
 
-    Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - KLIA EkspressBooking Number'), 0)
+    not_run: Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - KLIA EkspressBooking Number'), 0)
 
-    Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - Current Account-i5640 1703 5529'), 0)
+    /* Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - Current Account-i5640 1703 5529'), 0)
 
     Mobile.verifyElementVisible(findTestObject('Maya/KLIA/android.widget.TextView0 - Current Account-i5640 1703 5529'), 
         0)
@@ -334,8 +338,7 @@ if (Mobile.verifyElementExist(findTestObject('Maya/KLIA/android.widget.TextView0
 
     Mobile.getText(findTestObject('Maya/KLIA/android.widget.TextView0 - 30 Jul 2020'), 0)
 
-    Mobile.verifyElementVisible(findTestObject('Maya/KLIA/android.widget.TextView0 - 30 Jul 2020'), 0)
-
+    Mobile.verifyElementVisible(findTestObject('Maya/KLIA/android.widget.TextView0 - 30 Jul 2020'), 0)*/
     Mobile.tap(findTestObject('Maya/KLIA/android.widget.TextView0 - Approve'), 0)
 }
 

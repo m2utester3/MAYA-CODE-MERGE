@@ -184,6 +184,10 @@ Mobile.verifyElementText(findTestObject('Maya/Third Party Fav/android.widget.Tex
 */
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
+
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen3.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - More'), 5, FailureHandling.CONTINUE_ON_FAILURE)
@@ -382,7 +386,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -508,7 +512,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -611,7 +615,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -720,9 +724,9 @@ Mobile.getText(findTestObject('Maya/spy/android.widget.TextView0 - Duitnow Proxy
 Mobile.verifyElementVisible(findTestObject('Maya/spy/android.widget.TextView0 - Duitnow Proxy (Passport Number) ending 5THA has just been deregistered.'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 614 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 614 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 614 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 614 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/Mobile proxy/android.widget.TextView0 - Maybank2u DuitNow ID Registration'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -735,9 +739,9 @@ Mobile.getText(findTestObject('Maya/spy/android.widget.TextView0 - Duitnow Proxy
 Mobile.verifyElementVisible(findTestObject('Maya/spy/android.widget.TextView0 - Duitnow Proxy (Passport Number) ending 5THA has just been registered.'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 614 PM (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 614 PM (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 614 PM (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 614 PM (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/spy/android.widget.TextView0 - Duitnow Proxy (Passport Number) ending 5THA has just been disabled.'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
@@ -764,9 +768,9 @@ not_run: Mobile.getText(findTestObject('Maya/spy/android.widget.TextView0 - Duit
 not_run: Mobile.verifyElementVisible(findTestObject('Maya/spy/android.widget.TextView0 - Duitnow Proxy (Passport Number) ending 5THA has just been updated. (1)'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 613 PM (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 613 PM (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 613 PM (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 613 PM (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.getText(findTestObject('Maya/Mobile proxy/android.widget.TextView0 - Maybank2u DuitNow ID Proxy Update'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -779,7 +783,7 @@ Mobile.getText(findTestObject('Maya/spy/android.widget.TextView0 - Duitnow Proxy
 Mobile.verifyElementExist(findTestObject('Maya/spy/android.widget.TextView0 - Duitnow Proxy (Passport Number) ending 5THA has just been updated.'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 612 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 612 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 612 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 612 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 

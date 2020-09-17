@@ -17,7 +17,11 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-release.apk', false)
 
-Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - Hello'), 0)
+Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - Hello'), 10)
+
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\Forgot_Pin3\\Screen1.png', FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -61,7 +65,9 @@ Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 1'), 0)
 
 Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 2'), 0)
 
-Mobile.tapAtPosition(820, 1778)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
+not_run: Mobile.tapAtPosition(820, 1778)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (4)'), 0)
 
@@ -74,9 +80,9 @@ Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\Forgot_Pin\\Screen3.png', 
 
 Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 2'), 0)
 
-Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 3'), 0)
-
 Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 0'), 0)
+
+Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 3'), 0)
 
 Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 9'), 0)
 
@@ -84,7 +90,11 @@ Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 8'), 0)
 
 Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 3'), 0)
 
-Mobile.tapAtPosition(820, 1778)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
+not_run: Mobile.tapAtPosition(820, 1778)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (4)'), 0)
 
@@ -106,7 +116,11 @@ Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 8'), 0)
 
 Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 3'), 0)
 
-Mobile.tapAtPosition(820, 1778)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
+not_run: Mobile.tapAtPosition(820, 1778)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (4)'), 0)
 
@@ -130,7 +144,9 @@ Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 5'), 0)
 
 Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 6'), 0)
 
-Mobile.tapAtPosition(820, 1778)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
+not_run: Mobile.tapAtPosition(820, 1778)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (4)'), 0)
 
@@ -141,25 +157,25 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\Forgot_Pin\\Screen5.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(253.1, 1783.1)
+Mobile.tapAtPosition(246, 1622)
 
-Mobile.tapAtPosition(253.1, 1783.1)
+Mobile.tapAtPosition(246, 1622)
 
-Mobile.tapAtPosition(253.1, 1783.1)
+Mobile.tapAtPosition(246, 1622)
 
-Mobile.tapAtPosition(253.1, 1783.1)
+Mobile.tapAtPosition(246, 1622)
 
-Mobile.tapAtPosition(253.1, 1783.1)
+Mobile.tapAtPosition(246, 1622)
 
-Mobile.tapAtPosition(253.1, 1783.1)
+Mobile.tapAtPosition(246, 1622)
 
-Mobile.tapAtPosition(253.1, 1783.1)
+Mobile.tapAtPosition(246, 1622)
 
-Mobile.tapAtPosition(253.1, 1783.1)
+Mobile.tapAtPosition(246, 1622)
 
-Mobile.tapAtPosition(253.1, 1783.1)
+Mobile.tapAtPosition(246, 1622)
 
-Mobile.tapAtPosition(253.1, 1783.1)
+Mobile.tapAtPosition(246, 1622)
 
 Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 2'), 0)
 
@@ -173,9 +189,11 @@ Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 8'), 0)
 
 Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - 3'), 0)
 
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (4)'), 0)
 
-Mobile.tapAtPosition(820, 1778)
+not_run: Mobile.tapAtPosition(820, 1778)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - Confirm'), 0)
 
@@ -194,7 +212,7 @@ Mobile.getText(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - For an
 
 Mobile.tapAtPosition(928.7, 641.2)
 
-not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - Not Mine'), 0)
+Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - Not Mine'), 0)
 
 Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.TextView0 - Call Now'), 0)
 
@@ -298,7 +316,9 @@ Mobile.delay(8, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\Forgot_Pin3\\Screen9.png', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
+
+not_run: Mobile.tapAtPosition(820, 1778)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 

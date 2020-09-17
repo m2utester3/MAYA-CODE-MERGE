@@ -22,6 +22,10 @@ Mobile.startApplication('C:\\Users\\LENOVO\\Katalon Studio\\app-uat-universal-re
 
 Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
+
 Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Transfer (1)'), 7)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
@@ -122,7 +126,9 @@ Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\Third Party Fav\\Amt_Tran.
 
 not_run: Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.ImageView0 (9)'), 0)
 
-Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.80185, height * 0.92196)
+
+not_run: Mobile.tapAtPosition(861.4, 1759.1, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: Mobile.tap(findTestObject('Maya/duitnow/android.widget.EditText0 (1)'), 0)
 
@@ -243,7 +249,9 @@ if (Mobile.verifyElementExist(findTestObject('Maya/drop4 CR/android.widget.TextV
     
     Mobile.delay(8, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Maya/drop4 CR/android.widget.ImageView0-ENTER cHILD'), 0)
+    Mobile.tapAtPosition(width * 0.80185, height * 0.92196)
+
+    not_run: Mobile.tap(findTestObject('Maya/drop4 CR/android.widget.ImageView0-ENTER cHILD'), 0)
 }
 
 if (Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.widget.TextView0 - Approve'), 0)) {
@@ -308,11 +316,11 @@ Mobile.getText(findTestObject('Maya/spy/android.view.View0 - 010 9030 162'), 0)
 
 Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.view.View0 - Beneficiary name'), 0)
 
-Mobile.getText(findTestObject('Maya/New_Transfer/android.view.View0 - Recipient reference'), 0)
-
 Mobile.swipe(831, 1382, 800, 100)
 
 Mobile.getText(findTestObject('Maya/New_Transfer/android.view.View0 - Test'), 0)
+
+Mobile.getText(findTestObject('Maya/New_Transfer/android.view.View0 - Recipient reference'), 0)
 
 Mobile.verifyElementExist(findTestObject('Maya/New_Transfer/android.view.View0 - Recipient reference'), 0)
 

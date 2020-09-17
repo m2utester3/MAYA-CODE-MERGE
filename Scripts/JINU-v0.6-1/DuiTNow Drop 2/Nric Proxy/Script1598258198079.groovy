@@ -184,6 +184,10 @@ Mobile.verifyElementText(findTestObject('Maya/Third Party Fav/android.widget.Tex
 */
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
+def height = Mobile.getDeviceHeight()
+
+def width = Mobile.getDeviceWidth()
+
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen3.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - More (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
@@ -267,6 +271,8 @@ Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen15.png', FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - Switch account (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tapAndHoldAtPosition(540, 773, 1, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -358,7 +364,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -526,7 +532,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -663,12 +669,14 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementExist(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - DuitNow successfully disabled.'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/RegisterDuitNow/android.widget.TextView0 - DuitNow (6)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -768,7 +776,7 @@ for (def i = 16; i <= 21; i++) {
 
 Mobile.delay(8, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tapAtPosition(820, 1778, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tapAtPosition(width * 0.81481, height * 0.87904)
 
 not_run: Mobile.tap(findTestObject('Maya/Forgot Pin/android.widget.ImageView0 (7)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -778,6 +786,8 @@ Mobile.verifyElementExist(findTestObject('Maya/RegisterDuitNow/android.widget.Te
 Mobile.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.takeScreenshot('C:\\Users\\LENOVO\\Screenshot\\DuitNowProxy\\Screen14.png', FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('Maya/Mobile proxy/android.widget.TextView0 - More (1)'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -868,7 +878,7 @@ Mobile.getText(findTestObject('Maya/spy/android.widget.TextView0 - Duitnow Proxy
 Mobile.verifyElementExist(findTestObject('Maya/spy/android.widget.TextView0 - Duitnow Proxy (NRIC Number) ending 5263 has just been updated.'), 
     0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 612 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.getText(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 612 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 612 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.verifyElementExist(findTestObject('Maya/spy1/proxy/android.widget.TextView0 - 612 PM'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
